@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Henrique Valcanaia. All rights reserved.
 //
 
+// Teste commit
+
 import UIKit
 import Parse
 import MDCSwipeToChoose
