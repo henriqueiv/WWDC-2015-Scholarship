@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointing-left" translatesAutoresizingMaskIntoConstraints="NO" id="0ac-Gj-Btl">
+                    <rect key="frame" x="146" y="400" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0ac-Gj-Btl" secondAttribute="height" multiplier="1:1" id="25f-mE-Alw"/>
+                        <constraint firstAttribute="height" constant="100" id="DvU-H4-Ycx"/>
+                        <constraint firstAttribute="width" secondItem="0ac-Gj-Btl" secondAttribute="height" multiplier="1:1" id="Qr8-mZ-f5C"/>
+                        <constraint firstAttribute="width" constant="100" id="YGv-iB-Vzr"/>
+                        <constraint firstAttribute="width" constant="100" id="jJI-47-gTc"/>
+                        <constraint firstAttribute="width" constant="100" id="pVO-lF-I9Z"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DvU-H4-Ycx"/>
+                            <exclude reference="Qr8-mZ-f5C"/>
+                            <exclude reference="YGv-iB-Vzr"/>
+                            <exclude reference="jJI-47-gTc"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointing-right" translatesAutoresizingMaskIntoConstraints="NO" id="i3M-Re-L7V">
+                    <rect key="frame" x="358" y="400" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="i3M-Re-L7V" secondAttribute="height" multiplier="1:1" id="RRP-ad-8nl"/>
+                        <constraint firstAttribute="width" constant="100" id="mue-OE-zpu"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my portfolio(?)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puC-iu-R20">
+                    <rect key="frame" x="197" y="54" width="206" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe right if you wanna read more about the project" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gri-VG-bfY">
+                    <rect key="frame" x="376" y="353" width="224" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="0dq-2r-G59"/>
+                        <constraint firstAttribute="width" constant="224" id="lJC-xr-6C4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left if you don't care about the project" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXS-ns-K2B">
+                    <rect key="frame" x="36" y="371" width="182" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="JGi-Mz-XKG"/>
+                        <constraint firstAttribute="width" constant="182" id="Rfa-51-tZ6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gri-VG-bfY" secondAttribute="trailing" id="1zM-Dd-gEs"/>
+                <constraint firstItem="puC-iu-R20" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="54" id="5ju-fM-qxv"/>
+                <constraint firstAttribute="bottom" secondItem="i3M-Re-L7V" secondAttribute="bottom" constant="100" id="Jni-44-O3V"/>
+                <constraint firstItem="VXS-ns-K2B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="KL3-ou-YZD"/>
+                <constraint firstAttribute="centerX" secondItem="puC-iu-R20" secondAttribute="centerX" id="Mla-AO-R9w"/>
+                <constraint firstAttribute="trailing" secondItem="i3M-Re-L7V" secondAttribute="trailing" constant="142" id="QIV-ee-PEZ"/>
+                <constraint firstItem="0ac-Gj-Btl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="146" id="VtY-1b-IoN"/>
+                <constraint firstAttribute="bottom" secondItem="0ac-Gj-Btl" secondAttribute="bottom" constant="100" id="atD-Ar-k1b"/>
+                <constraint firstAttribute="bottom" secondItem="gri-VG-bfY" secondAttribute="bottom" constant="173" id="fth-wX-eOG"/>
+                <constraint firstAttribute="bottom" secondItem="VXS-ns-K2B" secondAttribute="bottom" constant="173" id="vHv-Uy-4d8"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="pointing-left" width="2500" height="2500"/>
+        <image name="pointing-right" width="2500" height="2500"/>
+    </resources>
+</document>

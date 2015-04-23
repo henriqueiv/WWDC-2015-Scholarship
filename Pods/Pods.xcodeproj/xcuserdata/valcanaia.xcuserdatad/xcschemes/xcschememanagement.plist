@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-HenriqueValcanaia-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HenriqueValcanaia-MDCSwipeToChoose.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HenriqueValcanaia-SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-HenriqueValcanaia.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0C375382DFC0F6ED62765B8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D01C85E9A64C56B5182A373</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CB4CD7A2B49E09100D40C502</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D72EF0D077E73929E6FF6E92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

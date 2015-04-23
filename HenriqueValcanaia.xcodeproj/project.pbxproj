@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		620C82CB1AE4A7DE00B9EB9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82CA1AE4A7DE00B9EB9F /* AppDelegate.swift */; };
-		620C82CD1AE4A7DE00B9EB9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82CC1AE4A7DE00B9EB9F /* ViewController.swift */; };
 		620C82D01AE4A7DE00B9EB9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620C82CE1AE4A7DE00B9EB9F /* Main.storyboard */; };
 		620C82D21AE4A7DE00B9EB9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620C82D11AE4A7DE00B9EB9F /* Images.xcassets */; };
 		620C82D51AE4A7DE00B9EB9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 620C82D31AE4A7DE00B9EB9F /* LaunchScreen.xib */; };
 		620C82E11AE4A7DE00B9EB9F /* HenriqueValcanaiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82E01AE4A7DE00B9EB9F /* HenriqueValcanaiaTests.swift */; };
+		620C82EE1AE4A85300B9EB9F /* SwipeProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82ED1AE4A85200B9EB9F /* SwipeProjectsViewController.swift */; };
+		620C82F01AE4A87600B9EB9F /* ChooseProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82EF1AE4A87600B9EB9F /* ChooseProjectView.swift */; };
+		620C82F21AE4A88A00B9EB9F /* ImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82F11AE4A88A00B9EB9F /* ImageLabelView.swift */; };
+		620C82F41AE4A8C800B9EB9F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82F31AE4A8C800B9EB9F /* Project.swift */; };
+		62384D681AE811E400970FF2 /* Tutorial.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62384D671AE811E400970FF2 /* Tutorial.xib */; };
+		7CA8FB6AE27F19C21FDF958D /* Pods_HenriqueValcanaia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B3604D081B72CB459D9C2F /* Pods_HenriqueValcanaia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3802E57766C7B013ED50981D /* Pods-HenriqueValcanaia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriqueValcanaia.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriqueValcanaia/Pods-HenriqueValcanaia.release.xcconfig"; sourceTree = "<group>"; };
+		4E60972F40D3FA4BA6D6FAD5 /* Pods-HenriqueValcanaia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriqueValcanaia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HenriqueValcanaia/Pods-HenriqueValcanaia.debug.xcconfig"; sourceTree = "<group>"; };
 		620C82C51AE4A7DE00B9EB9F /* HenriqueValcanaia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriqueValcanaia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		620C82C91AE4A7DE00B9EB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		620C82CA1AE4A7DE00B9EB9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		620C82CC1AE4A7DE00B9EB9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		620C82CF1AE4A7DE00B9EB9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		620C82D11AE4A7DE00B9EB9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		620C82D41AE4A7DE00B9EB9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		620C82DA1AE4A7DE00B9EB9F /* HenriqueValcanaiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriqueValcanaiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		620C82DF1AE4A7DE00B9EB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		620C82E01AE4A7DE00B9EB9F /* HenriqueValcanaiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenriqueValcanaiaTests.swift; sourceTree = "<group>"; };
+		620C82ED1AE4A85200B9EB9F /* SwipeProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeProjectsViewController.swift; sourceTree = "<group>"; };
+		620C82EF1AE4A87600B9EB9F /* ChooseProjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseProjectView.swift; sourceTree = "<group>"; };
+		620C82F11AE4A88A00B9EB9F /* ImageLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLabelView.swift; sourceTree = "<group>"; };
+		620C82F31AE4A8C800B9EB9F /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		62384D671AE811E400970FF2 /* Tutorial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tutorial.xib; sourceTree = "<group>"; };
+		F9B3604D081B72CB459D9C2F /* Pods_HenriqueValcanaia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HenriqueValcanaia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CA8FB6AE27F19C21FDF958D /* Pods_HenriqueValcanaia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +69,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38719E9612E682B2DEE2CDB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9B3604D081B72CB459D9C2F /* Pods_HenriqueValcanaia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		620C82BC1AE4A7DE00B9EB9F = {
 			isa = PBXGroup;
 			children = (
 				620C82C71AE4A7DE00B9EB9F /* HenriqueValcanaia */,
 				620C82DD1AE4A7DE00B9EB9F /* HenriqueValcanaiaTests */,
 				620C82C61AE4A7DE00B9EB9F /* Products */,
+				8D2304E4E1176916ECBB9D90 /* Pods */,
+				38719E9612E682B2DEE2CDB1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				620C82CA1AE4A7DE00B9EB9F /* AppDelegate.swift */,
-				620C82CC1AE4A7DE00B9EB9F /* ViewController.swift */,
-				620C82CE1AE4A7DE00B9EB9F /* Main.storyboard */,
-				620C82D11AE4A7DE00B9EB9F /* Images.xcassets */,
-				620C82D31AE4A7DE00B9EB9F /* LaunchScreen.xib */,
+				620C82EC1AE4A83500B9EB9F /* Controllers */,
+				620C82EA1AE4A82E00B9EB9F /* Models */,
 				620C82C81AE4A7DE00B9EB9F /* Supporting Files */,
+				620C82EB1AE4A83200B9EB9F /* Views */,
 			);
 			path = HenriqueValcanaia;
 			sourceTree = "<group>";
@@ -90,6 +112,7 @@
 		620C82C81AE4A7DE00B9EB9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				620C82D11AE4A7DE00B9EB9F /* Images.xcassets */,
 				620C82C91AE4A7DE00B9EB9F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -112,6 +135,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		620C82EA1AE4A82E00B9EB9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				620C82F31AE4A8C800B9EB9F /* Project.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		620C82EB1AE4A83200B9EB9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62384D671AE811E400970FF2 /* Tutorial.xib */,
+				620C82CE1AE4A7DE00B9EB9F /* Main.storyboard */,
+				620C82D31AE4A7DE00B9EB9F /* LaunchScreen.xib */,
+				620C82EF1AE4A87600B9EB9F /* ChooseProjectView.swift */,
+				620C82F11AE4A88A00B9EB9F /* ImageLabelView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		620C82EC1AE4A83500B9EB9F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				620C82ED1AE4A85200B9EB9F /* SwipeProjectsViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8D2304E4E1176916ECBB9D90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E60972F40D3FA4BA6D6FAD5 /* Pods-HenriqueValcanaia.debug.xcconfig */,
+				3802E57766C7B013ED50981D /* Pods-HenriqueValcanaia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 620C82E41AE4A7DE00B9EB9F /* Build configuration list for PBXNativeTarget "HenriqueValcanaia" */;
 			buildPhases = (
+				76C3F257AE325F3EA90856BF /* Check Pods Manifest.lock */,
 				620C82C11AE4A7DE00B9EB9F /* Sources */,
 				620C82C21AE4A7DE00B9EB9F /* Frameworks */,
 				620C82C31AE4A7DE00B9EB9F /* Resources */,
+				2B0E2B6E6BBBDA1D9FF96D5D /* Embed Pods Frameworks */,
+				73FF923DF33515867E4C3EAA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				620C82D01AE4A7DE00B9EB9F /* Main.storyboard in Resources */,
+				62384D681AE811E400970FF2 /* Tutorial.xib in Resources */,
 				620C82D51AE4A7DE00B9EB9F /* LaunchScreen.xib in Resources */,
 				620C82D21AE4A7DE00B9EB9F /* Images.xcassets in Resources */,
 			);
@@ -207,13 +271,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B0E2B6E6BBBDA1D9FF96D5D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriqueValcanaia/Pods-HenriqueValcanaia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73FF923DF33515867E4C3EAA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriqueValcanaia/Pods-HenriqueValcanaia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C3F257AE325F3EA90856BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		620C82C11AE4A7DE00B9EB9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620C82CD1AE4A7DE00B9EB9F /* ViewController.swift in Sources */,
+				620C82F21AE4A88A00B9EB9F /* ImageLabelView.swift in Sources */,
+				620C82F01AE4A87600B9EB9F /* ChooseProjectView.swift in Sources */,
 				620C82CB1AE4A7DE00B9EB9F /* AppDelegate.swift in Sources */,
+				620C82EE1AE4A85300B9EB9F /* SwipeProjectsViewController.swift in Sources */,
+				620C82F41AE4A8C800B9EB9F /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +455,7 @@
 		};
 		620C82E51AE4A7DE00B9EB9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E60972F40D3FA4BA6D6FAD5 /* Pods-HenriqueValcanaia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HenriqueValcanaia/Info.plist;
@@ -350,6 +466,7 @@
 		};
 		620C82E61AE4A7DE00B9EB9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3802E57766C7B013ED50981D /* Pods-HenriqueValcanaia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HenriqueValcanaia/Info.plist;
@@ -411,6 +528,7 @@
 				620C82E61AE4A7DE00B9EB9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		620C82E71AE4A7DE00B9EB9F /* Build configuration list for PBXNativeTarget "HenriqueValcanaiaTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +537,7 @@
 				620C82E91AE4A7DE00B9EB9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
