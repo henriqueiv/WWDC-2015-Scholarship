@@ -23,9 +23,9 @@
 // THE SOFTWARE.
 //
 
-import UIKit
-import Parse
 import MDCSwipeToChoose
+import Parse
+import UIKit
 
 class ChooseProjectView: MDCSwipeToChooseView {
     
@@ -33,9 +33,6 @@ class ChooseProjectView: MDCSwipeToChooseView {
     var project: Project!
     var informationView: UIView!
     var nameLabel: UILabel!
-    var carmeraImageLabelView:ImagelabelView!
-    var interestsImageLabelView: ImagelabelView!
-    var friendsImageLabelView: ImagelabelView!
     
     init(frame: CGRect, project: Project, options: MDCSwipeToChooseViewOptions) {
         super.init(frame: frame, options: options)
@@ -52,9 +49,7 @@ class ChooseProjectView: MDCSwipeToChooseView {
             }
             
             }, progressBlock: { (progress: Int32) -> Void in
-                
-                println(progress)
-                
+//                println(progress)
         })
         
         self.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
@@ -83,9 +78,6 @@ class ChooseProjectView: MDCSwipeToChooseView {
         
         self.addSubview(self.informationView)
         constructNameLabel()
-        //        constructCameraImageLabelView()
-        //        constructInterestsImageLabelView()
-        //        constructFriendsImageLabelView()
     }
     
     func constructNameLabel() -> Void{
@@ -93,38 +85,15 @@ class ChooseProjectView: MDCSwipeToChooseView {
         var topPadding:CGFloat = 17.0
         var frame:CGRect = CGRectMake(leftPadding,
             topPadding,
-            floor(CGRectGetWidth(self.informationView.frame)/2),
+            floor(CGRectGetWidth(self.informationView.frame)),
             CGRectGetHeight(self.informationView.frame) - topPadding)
         self.nameLabel = UILabel(frame:frame)
-        self.nameLabel.text = "\(project.name), \(project.date)"
+        
+        var dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        let s = dateFormatter.stringFromDate(project.date)
+        
+        self.nameLabel.text = "\(project.name), \(s)"
         self.informationView .addSubview(self.nameLabel)
-    }
-    
-    func constructCameraImageLabelView() -> Void{
-        var rightPadding:CGFloat = 10.0
-        var image:UIImage = UIImage(named:"camera")!
-        //        self.carmeraImageLabelView = buildImageLabelViewLeftOf(CGRectGetWidth(self.informationView.bounds), image:image, text:person.NumberOfPhotos.stringValue)
-        self.informationView.addSubview(self.carmeraImageLabelView)
-    }
-    
-    func constructInterestsImageLabelView() -> Void{
-        var image: UIImage = UIImage(named: "book")!
-        //        self.interestsImageLabelView = self.buildImageLabelViewLeftOf(CGRectGetMinX(self.carmeraImageLabelView.frame), image: image, text:person.NumberOfPhotos.stringValue)
-        self.informationView.addSubview(self.interestsImageLabelView)
-    }
-    
-    func constructFriendsImageLabelView() -> Void{
-        var image:UIImage = UIImage(named:"group")!
-        //        self.friendsImageLabelView = buildImageLabelViewLeftOf(CGRectGetMinX(self.interestsImageLabelView.frame), image:image, text:"No Friends")
-        self.informationView.addSubview(self.friendsImageLabelView)
-    }
-    
-    func buildImageLabelViewLeftOf(x:CGFloat, image:UIImage, text:NSString) -> ImagelabelView{
-        var frame:CGRect = CGRect(x:x-ChooseProjectViewImageLabelWidth, y: 0,
-            width: ChooseProjectViewImageLabelWidth,
-            height: CGRectGetHeight(self.informationView.bounds))
-        var view:ImagelabelView = ImagelabelView(frame:frame, image:image, text:text)
-        view.autoresizingMask = UIViewAutoresizing.FlexibleLeftMargin
-        return view
     }
 }

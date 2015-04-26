@@ -52,22 +52,4 @@ class ProjectViewController: UIViewController {
         self.lblProject.text = self.project?.name
         self.tvDesc.text = self.project?.fullDescription
     }
-    
-    
-    @IBAction func dismissProjectView(sender: AnyObject) {
-        //        self.dismissViewControllerAnimated(flag: Bool) { () -> Void in
-        
-        //        }
-    }
-    
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
-    }
-    */
-    
 }

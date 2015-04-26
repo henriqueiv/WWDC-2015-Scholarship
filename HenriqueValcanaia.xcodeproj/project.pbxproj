@@ -14,10 +14,8 @@
 		620C82E11AE4A7DE00B9EB9F /* HenriqueValcanaiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82E01AE4A7DE00B9EB9F /* HenriqueValcanaiaTests.swift */; };
 		620C82EE1AE4A85300B9EB9F /* SwipeProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82ED1AE4A85200B9EB9F /* SwipeProjectsViewController.swift */; };
 		620C82F01AE4A87600B9EB9F /* ChooseProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82EF1AE4A87600B9EB9F /* ChooseProjectView.swift */; };
-		620C82F21AE4A88A00B9EB9F /* ImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82F11AE4A88A00B9EB9F /* ImageLabelView.swift */; };
 		620C82F41AE4A8C800B9EB9F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C82F31AE4A8C800B9EB9F /* Project.swift */; };
 		6217CD451AED602A00670933 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6217CD441AED602A00670933 /* ProjectViewController.swift */; };
-		62384D681AE811E400970FF2 /* Tutorial.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62384D671AE811E400970FF2 /* Tutorial.xib */; };
 		7CA8FB6AE27F19C21FDF958D /* Pods_HenriqueValcanaia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B3604D081B72CB459D9C2F /* Pods_HenriqueValcanaia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -45,10 +43,8 @@
 		620C82E01AE4A7DE00B9EB9F /* HenriqueValcanaiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HenriqueValcanaiaTests.swift; sourceTree = "<group>"; };
 		620C82ED1AE4A85200B9EB9F /* SwipeProjectsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeProjectsViewController.swift; sourceTree = "<group>"; };
 		620C82EF1AE4A87600B9EB9F /* ChooseProjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseProjectView.swift; sourceTree = "<group>"; };
-		620C82F11AE4A88A00B9EB9F /* ImageLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLabelView.swift; sourceTree = "<group>"; };
 		620C82F31AE4A8C800B9EB9F /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		6217CD441AED602A00670933 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
-		62384D671AE811E400970FF2 /* Tutorial.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Tutorial.xib; sourceTree = "<group>"; };
 		F9B3604D081B72CB459D9C2F /* Pods_HenriqueValcanaia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HenriqueValcanaia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,11 +144,9 @@
 		620C82EB1AE4A83200B9EB9F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				62384D671AE811E400970FF2 /* Tutorial.xib */,
 				620C82CE1AE4A7DE00B9EB9F /* Main.storyboard */,
 				620C82D31AE4A7DE00B9EB9F /* LaunchScreen.xib */,
 				620C82EF1AE4A87600B9EB9F /* ChooseProjectView.swift */,
-				620C82F11AE4A88A00B9EB9F /* ImageLabelView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -259,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				620C82D01AE4A7DE00B9EB9F /* Main.storyboard in Resources */,
-				62384D681AE811E400970FF2 /* Tutorial.xib in Resources */,
 				620C82D51AE4A7DE00B9EB9F /* LaunchScreen.xib in Resources */,
 				620C82D21AE4A7DE00B9EB9F /* Images.xcassets in Resources */,
 			);
@@ -327,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620C82F21AE4A88A00B9EB9F /* ImageLabelView.swift in Sources */,
 				620C82F01AE4A87600B9EB9F /* ChooseProjectView.swift in Sources */,
 				6217CD451AED602A00670933 /* ProjectViewController.swift in Sources */,
 				620C82CB1AE4A7DE00B9EB9F /* AppDelegate.swift in Sources */,

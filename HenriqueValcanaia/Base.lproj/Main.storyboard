@@ -18,9 +18,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4Uk-fy-Zf6">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="4Uk-fy-Zf6" secondAttribute="centerX" id="H5C-Jj-03O"/>
+                            <constraint firstAttribute="centerY" secondItem="4Uk-fy-Zf6" secondAttribute="centerY" id="cRE-CR-MtC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="4Uk-fy-Zf6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="H5C-Jj-03O"/>
+                                <exclude reference="cRE-CR-MtC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="4Uk-fy-Zf6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="H5C-Jj-03O"/>
+                                <include reference="cRE-CR-MtC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="4Uk-fy-Zf6" id="X8p-Uv-eTJ"/>
                         <segue destination="IV4-bt-tgE" kind="popoverPresentation" identifier="showProjectDetail" popoverAnchorView="8bC-Xf-vdC" id="0r6-3p-OhQ">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                         </segue>
@@ -28,6 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="120" y="198"/>
         </scene>
         <!--Project View Controller-->
         <scene sceneID="sc6-b0-CYE">
@@ -103,11 +132,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJ3-Vc-CSx">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="x">
-                                    <color key="titleColor" red="0.98039215690000003" green="0.0" blue="0.0039215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dismissProjectView:" destination="IV4-bt-tgE" eventType="touchUpInside" id="rW7-0V-e5m"/>
                                     <segue destination="hnz-Xl-9FR" kind="unwind" unwindAction="unwindSegue:" id="Roh-NP-L2J"/>
                                 </connections>
                             </button>
@@ -118,7 +146,7 @@
                             <constraint firstItem="lOO-CO-XAu" firstAttribute="top" secondItem="iQO-cZ-QGb" secondAttribute="bottom" id="87t-vE-fhu"/>
                             <constraint firstItem="zkC-xz-4Qs" firstAttribute="top" secondItem="SWX-GM-3dw" secondAttribute="topMargin" id="Enb-hj-RsL"/>
                             <constraint firstItem="zkC-xz-4Qs" firstAttribute="trailing" secondItem="SWX-GM-3dw" secondAttribute="trailingMargin" constant="-16" id="FRY-Tw-W4J">
-                                <variation key="widthClass=compact" constant="-44"/>
+                                <variation key="widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="mzx-gu-Ta7" secondAttribute="centerX" id="H1X-le-hfR"/>
                             <constraint firstItem="mzx-gu-Ta7" firstAttribute="top" secondItem="lOO-CO-XAu" secondAttribute="bottom" constant="59" id="LNs-FY-5MG"/>

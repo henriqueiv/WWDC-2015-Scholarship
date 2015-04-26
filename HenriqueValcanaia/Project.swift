@@ -20,14 +20,12 @@ class Project: PFObject, PFSubclassing {
     @NSManaged var image: PFFile!
     
     static func parseClassName() -> String{
-        //        return NSStringFromClass(self.dynamicType).componentsSeparatedByString(".").last!
         return "Project"
     }
     
     override class func initialize() {
         Parse.enableLocalDatastore()
         self.registerSubclass()
-        
         Parse.setApplicationId(kParseApplicationID, clientKey: kParseClientKey)
     }
 }
