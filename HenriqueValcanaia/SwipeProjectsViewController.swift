@@ -36,14 +36,6 @@ class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
         self.setProjects()
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        var nibView = NSBundle.mainBundle().loadNibNamed("Tutorial", owner: self, options: nil)[0] as! UIView
-        nibView.frame = self.view.bounds;
-        self.view.addSubview(nibView);
-        self.view.bringSubviewToFront(nibView)
-    }
-    
     override func viewDidLoad(){
         super.viewDidLoad()
         
@@ -77,14 +69,15 @@ class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
     // This is called then a user swipes the view fully left or right.
     func view(view: UIView, wasChosenWithDirection: MDCSwipeDirection) -> Void{
         
+        
         // MDCSwipeToChooseView shows "NOPE" on swipes to the left,
         // and "LIKED" on swipes to the right.
         if(wasChosenWithDirection == MDCSwipeDirection.Left){
             println("You noped: \(self.currentProject.name)")
         }
         else{
-            
             println("You liked: \(self.currentProject.name)")
+            self.performSegueWithIdentifier("showProjectDetail", sender: self.currentProject)
         }
         
         // MDCSwipeToChooseView removes the view from the view hierarchy
@@ -105,6 +98,15 @@ class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
                 self.backCardView.alpha = 1.0
                 },completion:nil)
         }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! ProjectViewController
+        vc.project = sender as? Project
+    }
+    
+    @IBAction func unwindSegue(sender: UIStoryboardSegue){
+        
     }
     
     func setFrontCardViewAndCurrentProject(frontCardView:ChooseProjectView) -> Void{
@@ -138,9 +140,37 @@ class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
                     // See the 'nopeFrontCardView' and 'likeFrontCardView' methods.
                     self.constructNopeButton()
                     self.constructLikedButton()
+                    
+//                    self.showModalTutorialView()
                 })
             }
         }
+    }
+    
+    func showModalTutorialView(){
+        var nibView = NSBundle.mainBundle().loadNibNamed("Tutorial", owner: self, options: nil)[0] as! UIView
+    
+        for view in nibView.subviews{
+            println(view)
+        }
+
+        var imageView1 = nibView.viewWithTag(42) as? UIImageView
+        
+        
+        
+        imageView1!.layer.cornerRadius = imageView1!.frame.size.width / 2
+        imageView1!.clipsToBounds = true
+        
+        
+        nibView.frame = self.view.bounds;
+        nibView.backgroundColor = UIColor.clearColor()
+        var blur = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        var blurView = UIVisualEffectView(effect: blur)
+        blurView.frame = nibView.bounds
+        blurView.addSubview(nibView)
+        
+        self.view.addSubview(blurView);
+        self.view.bringSubviewToFront(blurView)
     }
     
     func defaultProjects() -> NSMutableArray{

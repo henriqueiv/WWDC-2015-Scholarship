@@ -9,6 +9,8 @@
 // NOVOOOO PROJETOOOOO
 
 import Parse
+let kParseApplicationID: String = "GhuwLUxiyCKHGtVA4XwuXxXAryjAjGqlXzCdCNmo"
+let kParseClientKey: String = "YmDUNnq9TM1piq9LwlO5Sapq7lTVfsCRLIIsi7bO"
 
 class Project: PFObject, PFSubclassing {
     @NSManaged var name: String!
@@ -26,7 +28,6 @@ class Project: PFObject, PFSubclassing {
         Parse.enableLocalDatastore()
         self.registerSubclass()
         
-        Parse.setApplicationId("GhuwLUxiyCKHGtVA4XwuXxXAryjAjGqlXzCdCNmo",
-            clientKey: "YmDUNnq9TM1piq9LwlO5Sapq7lTVfsCRLIIsi7bO")
+        Parse.setApplicationId(kParseApplicationID, clientKey: kParseClientKey)
     }
 }
