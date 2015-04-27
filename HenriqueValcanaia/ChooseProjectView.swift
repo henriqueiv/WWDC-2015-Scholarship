@@ -49,7 +49,7 @@ class ChooseProjectView: MDCSwipeToChooseView {
             }
             
             }, progressBlock: { (progress: Int32) -> Void in
-//                println(progress)
+                //                println(progress)
         })
         
         self.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth

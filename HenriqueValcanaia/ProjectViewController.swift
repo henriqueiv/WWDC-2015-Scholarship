@@ -36,6 +36,7 @@ class ProjectViewController: UIViewController {
     
     func setAppearence(){
         self.view.backgroundColor = UIColor.clearColor()
+        self.hidesBottomBarWhenPushed = true
     }
     
     func setProjectInformation(){

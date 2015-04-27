@@ -14,8 +14,6 @@ import UIKit
 class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
     
     var projects:NSMutableArray = NSMutableArray.new()
-    let ChoosePersonButtonHorizontalPadding:CGFloat = 80.0
-    let ChoosePersonButtonVerticalPadding:CGFloat = 20.0
     var currentProject:Project!
     var frontCardView:ChooseProjectView!
     var backCardView:ChooseProjectView!
@@ -59,7 +57,7 @@ class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
         }
         
         backCardView = self.popProjectViewWithFrame(self.backCardViewFrame())
-
+        
         // Fade the back card into view
         if(backCardView != nil){
             self.backCardView.alpha = 0.0
@@ -104,7 +102,6 @@ class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
                     self.backCardView = self.popProjectViewWithFrame(self.backCardViewFrame())!
                     self.view.insertSubview(self.backCardView, belowSubview: self.frontCardView)
                     
-                    
                     if let loader = self.activityIndicator{
                         loader.stopAnimating()
                         loader.hidden = true
@@ -112,32 +109,6 @@ class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
                 })
             }
         }
-    }
-    
-    func showModalTutorialView(){
-        var nibView = NSBundle.mainBundle().loadNibNamed("Tutorial", owner: self, options: nil)[0] as! UIView
-    
-        for view in nibView.subviews{
-            println(view)
-        }
-
-        var imageView1 = nibView.viewWithTag(42) as? UIImageView
-        
-        
-        
-        imageView1!.layer.cornerRadius = imageView1!.frame.size.width / 2
-        imageView1!.clipsToBounds = true
-        
-        
-        nibView.frame = self.view.bounds;
-        nibView.backgroundColor = UIColor.clearColor()
-        var blur = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        var blurView = UIVisualEffectView(effect: blur)
-        blurView.frame = nibView.bounds
-        blurView.addSubview(nibView)
-        
-        self.view.addSubview(blurView);
-        self.view.bringSubviewToFront(blurView)
     }
     
     func popProjectViewWithFrame(frame:CGRect) -> ChooseProjectView?{
@@ -155,7 +126,7 @@ class SwipeProjectsViewController: UIViewController, MDCSwipeToChooseDelegate{
             }
         }
         
-        // Create a ProjectView with the top Project in the projects array, then pop
+        // Create a ChooseProjectView with the top Project in the projects array, then pop
         // that Project off the stack.
         var projectView:ChooseProjectView = ChooseProjectView(frame: frame, project: self.projects.objectAtIndex(0) as! Project, options: options)
         

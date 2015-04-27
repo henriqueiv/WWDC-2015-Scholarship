@@ -6,9 +6,8 @@
 //  Copyright (c) 2015 Henrique Valcanaia. All rights reserved.
 //
 
-// NOVOOOO PROJETOOOOO
-
 import Parse
+
 let kParseApplicationID: String = "GhuwLUxiyCKHGtVA4XwuXxXAryjAjGqlXzCdCNmo"
 let kParseClientKey: String = "YmDUNnq9TM1piq9LwlO5Sapq7lTVfsCRLIIsi7bO"
 
